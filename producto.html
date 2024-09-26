@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <!-- Linkear normalize -->
+    <link rel="stylesheet" href="./normalize.css">
+    <!-- Linkear fuente de google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- linkear hoja css -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="header"> <!-- el header representa en BEM un bloque -->
+        <a href="index.html">
+            <img class="header__logo" src="ASSETS/FrontEndStore_inicio/img/logo.png" alt="Logotipo"> <!-- img en BEM representa un elemento por lo que su clase se escribe con dos guion bajo class="header__logo" -->
+        </a>
+    </header>
+
+    <nav class="navegación">
+        <a class="navegación__enlace navegación__enlace--activo" href="index.html">Tienda</a> <!-- Aca hay un elemento representado por doble guion bajo y también hay un modificador representado por doble guión medio -->
+        <a class="navegación__enlace"  href="producto.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>React JS</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="./ASSETS/FrontEndStore_inicio/img/3.jpg" alt="imagen del producto">
+            <div class="camisa__contenido">
+                <p>Vivamus sed libero arcu. Nam vel porta felis. Donec sit amet semper velit, sed gravida enim. Sed porta elit risus, eu luctus nunc porttitor non.</p>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>--Seleccionar talla--</option> <!-- Para desabilitar el texto y selected para que sea lo que salga de titulo -->
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1"> 
+                    <input class="formulario__submit"type="submit" value="agregar al carrito">
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos reservados 2024</p>
+    </footer>
+</body>
+</html>
